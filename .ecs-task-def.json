@@ -1,0 +1,22 @@
+{
+    "family": "webserver", 
+    "networkMode": "awsvpc", 
+    "containerDefinitions": [
+      {
+        "name": "webserver",
+        "image": "nginx:1.13.9-alpine",
+        "networkMode": "awsvpc",
+        "portMappings": [
+          {
+            "containerPort": 80,
+            "hostPort": 80
+          }
+        ]
+      }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "256", 
+    "memory": "512"
+}
