@@ -5,7 +5,6 @@
       {
         "name": "webserver",
         "image": "nginx:1.13.9-alpine",
-        "networkMode": "awsvpc",
         "portMappings": [
           {
             "containerPort": 80,
